@@ -86,6 +86,16 @@ nav ul li {
     width: 60%;
 }
 
+.logo_section {
+    width: 75%;
+    margin: auto;
+}
+
+.logo_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
 @media screen and (max-width:576px) {
     .banner_img {
         width: 100%;
@@ -133,6 +143,26 @@ nav ul li {
         flex-direction: column-reverse;
     }
 
+    .logo_section {
+
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: .5rem;
+    }
+
+    .logo_container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .logo_container img {
+        width: 70%;
+    }
+
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -154,5 +184,13 @@ nav ul li {
         width: 100%;
         margin-bottom: 1rem;
     }
-    
+    .logo_section{
+        width: 90%;
+        margin: 1rem 0;
+    }
+    .logo_container{
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
 }
