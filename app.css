@@ -6,6 +6,7 @@
     background-color: rgb(244, 247, 249)
 }
 
+
 header {
     max-width: 1400px;
     margin: auto;
@@ -88,7 +89,7 @@ nav ul li {
 }
 
 .logo_section {
-    
+
     width: 75%;
     margin: auto;
     margin-top: 2rem;
@@ -100,23 +101,26 @@ nav ul li {
     grid-template-columns: repeat(7, 1fr);
 }
 
-.card_section{
+.card_section {
     width: 90%;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
 }
-.card_container{
+
+.card_container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
 }
-.card_start_div{
+
+.card_start_div {
     display: flex;
     gap: 1rem;
 }
-.card{
+
+.card {
     width: 300px;
     /* height: 300px; */
     /* background-color: #E02C6D;  */
@@ -125,27 +129,100 @@ nav ul li {
     border-radius: 5px;
     box-shadow: 4px 4px 30px 6px #d8d6d6;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card h3{
+
+.card h3 {
     font-size: 25px;
     font-weight: 500;
 }
-.card h4{
+
+.card h4 {
     margin: .5rem;
     font-weight: 400;
     font-size: 20px;
 }
-.card_des{
+
+.card_des {
     color: #787885;
     font-weight: 500;
+}
+
+.Features_products_section {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature_img_box {
+    width: 29%;
+}
+
+.features_text_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    float: left;
+}
+
+.features_text_div p {
+    margin: 1rem 0;
+    color: #6C6C6C;
+}
+
+.features_text_div h1 {
+    font-size: 30px;
+}
+
+.features_text_div button {
+    background-color: #E02C6D;
+    padding: 5px 1.4rem;
+    color: #fff;
+    border-radius: 18px 18px 18px 18px;
+    border: none;
+}
+
+
+.see_div {
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.see {
+    color: #E02C6D;
+    padding: 5px 1.4rem;
+    font-weight: 700;
+    border: none;
+    float: right;
+}
+
+.foot{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: black;
 }
 
 @media screen and (max-width:576px) {
     .banner_img {
         width: 100%;
         margin-top: 1rem;
+    }
+    .card_start_div{
+        justify-content: center;
     }
 
     .banner .banner_text {
@@ -208,24 +285,58 @@ nav ul li {
     .logo_container img {
         width: 70%;
     }
-    .card_container{
-        grid-template-columns: repeat(1,1fr);
+
+    .card_container {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .card{
+
+    .card {
         width: 90%;
         text-align: center;
         margin-bottom: 1rem;
     }
-    .card img{
+
+    .card img {
         width: 90%;
     }
-    .card_section{
+
+    .card_section {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
     }
 
+    .Features_products_section {
+        width: 90%;
+    }
+
+    .features_container {
+
+        flex-direction: column;
+    }
+
+    .feature_img_box {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .feature_img_box img {
+        width: 100%;
+    }
+
+    .features_text_div {
+        margin-top: .5rem;
+
+        width: 90%;
+        padding: 10px;
+    }
+
+    .see_div {
+        width: 80%;
+
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -247,29 +358,51 @@ nav ul li {
         width: 100%;
         margin-bottom: 1rem;
     }
-    .logo_section{
+
+    .logo_section {
         width: 90%;
         margin: 1rem 0;
     }
-    .logo_container{
-        grid-template-columns: repeat(4,1fr);
+
+    .logo_container {
+        grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
         padding: 1rem;
     }
-    .card_section{
+
+    .card_section {
         width: 95%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .card_container{
-        grid-template-columns: repeat(2,1fr);
+
+    .card_container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 0;
     }
-    .card{
+
+    .card {
         width: 50%;
     }
-    .card{
+
+    .card {
         width: 90%;
+    }
+    .features_container{
+        flex-direction: column;
+    }
+    .feature_img_box{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .feature_img_box img{
+        width: 100%;
+    }
+    .Features_products_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
